@@ -7,14 +7,13 @@ import Pagination from "./components/Pagination";
 import Footer from "./components/Footer";
 import Aside from "./components/Aside";
 import QuickView from "./components/QuickView";
-import "./scss/style.scss";
+import "./styles.css";
 
 const headers = {
   accept: "application/json",
-  authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImpTcEJjejBIdW01dVlGYnV2T2pQMGdkRml3VSIsImtpZCI6ImpTcEJjejBIdW01dVlGYnV2T2pQMGdkRml3VSJ9.eyJpc3MiOiJodHRwczovL2RldmF1dGgucDEwLmlvL2F1dGgiLCJhdWQiOiJodHRwczovL2RldmF1dGgucDEwLmlvL2F1dGgvcmVzb3VyY2VzIiwiZXhwIjoxNTIzMzQ1MTM3LCJuYmYiOjE1MjI3NDAzMzcsImNsaWVudF9pZCI6IjZCOUQ0M0QzMDgyMkY5NzZERUExRjM5QTFDMjZEQTY5NzQxNjdDMUMzQkY3QkIwRkQzNjlCNjhCREQ3ODgxNUMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyIsImJhYXMiXSwic3ViIjoicmlzaGlrZXNoQGJpdHBvZC5pbyIsImF1dGhfdGltZSI6MTUyMjc0MDMzNiwiaWRwIjoicDEwT0F1dGgiLCJhbXIiOlsiZXh0ZXJuYWwiXX0.wMtWRmiKsDq2NxpAzO4K4dnn3gmS82VURrx_fQPht3gW9vfTdq-CYtRA14P3QC9VtEpUR4nUgJTWjPrtHYtkCNRk4ACR4jBsNepDsm_oNVVkGfn3-7Rfnwlc2roqUcogl78Ny2mGIPNPmDHaf3K37F8GRKeB_qFIepk9quHK6Skxk6boHx2rxfppl-GxoBR9DcaqqqFmavWi3JA-NmvYUt6I5aAll8tgSV2mAuvrMfJ6abzNAByIYNYaKKhKSFhPiDb9P9KdiH9QVK4agmIHaln73Ftt4_MbaMltM_wHJuEwxV9cj-oPq0QsByKIsqico5MUaAwU-PNgd8lWXWyy3w"
+  authorization:
+    "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImpTcEJjejBIdW01dVlGYnV2T2pQMGdkRml3VSIsImtpZCI6ImpTcEJjejBIdW01dVlGYnV2T2pQMGdkRml3VSJ9.eyJpc3MiOiJodHRwczovL2RldmF1dGgucDEwLmlvL2F1dGgiLCJhdWQiOiJodHRwczovL2RldmF1dGgucDEwLmlvL2F1dGgvcmVzb3VyY2VzIiwiZXhwIjoxNTIzMzQ1MTM3LCJuYmYiOjE1MjI3NDAzMzcsImNsaWVudF9pZCI6IjZCOUQ0M0QzMDgyMkY5NzZERUExRjM5QTFDMjZEQTY5NzQxNjdDMUMzQkY3QkIwRkQzNjlCNjhCREQ3ODgxNUMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyIsImJhYXMiXSwic3ViIjoicmlzaGlrZXNoQGJpdHBvZC5pbyIsImF1dGhfdGltZSI6MTUyMjc0MDMzNiwiaWRwIjoicDEwT0F1dGgiLCJhbXIiOlsiZXh0ZXJuYWwiXX0.wMtWRmiKsDq2NxpAzO4K4dnn3gmS82VURrx_fQPht3gW9vfTdq-CYtRA14P3QC9VtEpUR4nUgJTWjPrtHYtkCNRk4ACR4jBsNepDsm_oNVVkGfn3-7Rfnwlc2roqUcogl78Ny2mGIPNPmDHaf3K37F8GRKeB_qFIepk9quHK6Skxk6boHx2rxfppl-GxoBR9DcaqqqFmavWi3JA-NmvYUt6I5aAll8tgSV2mAuvrMfJ6abzNAByIYNYaKKhKSFhPiDb9P9KdiH9QVK4agmIHaln73Ftt4_MbaMltM_wHJuEwxV9cj-oPq0QsByKIsqico5MUaAwU-PNgd8lWXWyy3w"
 };
-
-
 
 class App extends Component {
   constructor() {
@@ -45,11 +44,9 @@ class App extends Component {
   }
   // Fetch Initial Set of Products from external API
   getProducts() {
-    debugger;
     //For Localhost use the below url
     const url =
       "https://peoplesure_testapp-lv1ws.test.p10.io/svc/api/Products/getUIProductJSON";
-
 
     // axios.get(url).then(response => {
     //   this.setState({
@@ -57,12 +54,42 @@ class App extends Component {
     //   });
 
     axios({
-      method: 'get',
+      method: "get",
       url: url,
-      headers: headers,
-    }).then((response) => {
+      headers: headers
+    }).then(response => {
       this.setState({
         products: response.data.result
+      });
+    });
+
+    // const url = "src/products.json";
+    // //const url="https://quarkbackend.com/getfile/sivadass/products";
+    // axios.get(url)
+    // 	.then(response => {
+    // 		this.setState({
+    // 			products : response.data
+    // 		})
+    // 	})
+  }
+
+  getCategories() {
+    //For Localhost use the below url
+    const url =
+      "https://peoplesure_testapp-lv1ws.test.p10.io/svc/api/Categories";
+
+    // axios.get(url).then(response => {
+    //   this.setState({
+    //     products: response.data.result
+    //   });
+
+    axios({
+      method: "get",
+      url: url,
+      headers: headers
+    }).then(response => {
+      this.setState({
+        categories: response.data.result
       });
     });
 
@@ -79,7 +106,6 @@ class App extends Component {
     //this.getProducts();
   }
   componentDidMount() {
-
     this.getProducts();
   }
 
@@ -117,7 +143,7 @@ class App extends Component {
       cartBounce: true
     });
     setTimeout(
-      function () {
+      function() {
         this.setState({
           cartBounce: false,
           quantity: 1
@@ -143,7 +169,7 @@ class App extends Component {
   }
   checkProduct(productID) {
     let cart = this.state.cart;
-    return cart.some(function (item) {
+    return cart.some(function(item) {
       return item.id === productID;
     });
   }
@@ -203,7 +229,7 @@ class App extends Component {
           updateQuantity={this.updateQuantity}
           productQuantity={this.state.moq}
         />
-        <Aside />
+        <Aside categories={this.state.categories} />
         <Products
           productsList={this.state.products}
           searchTerm={this.state.term}
