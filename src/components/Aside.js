@@ -6,7 +6,12 @@ class Aside extends Component {
       this.props.categories.map(category => {
         return (
           <div className="ais-hierarchical-menu--item" key={category.id}>
-            <div onClick={this.props.categoryClicked.bind(this, category.id)}>
+            <div
+              onClick={
+                this.props.categoryClicked &&
+                this.props.categoryClicked.bind(this, category.id)
+              }
+            >
               <a className="facet-item ">
                 <span className="facet-name">
                   <i className="fa fa-angle-right" /> {category.Name}
