@@ -965,7 +965,9 @@ footer .footer-links a {
 .quick-view-details .product-price:before {
 	content: "Rs. ";
 }
-
+.quick-view-image{
+	height: 60vh;
+}
 .quick-view-image img {
 	max-width: 500px;
 	margin: 0 auto;
