@@ -1,0 +1,51 @@
+aside {
+  position: fixed;
+  overflow-y: auto;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  padding: 20px;
+  border-right: 1px solid #eee;
+  background: #ffffff;
+  .facet-wrapper {
+    padding-bottom: 12px;
+    border-bottom: solid 1px #eee;
+    margin-bottom: 12px;
+    font-size: 0.87em;
+  }
+  aside .facet-category-title {
+    font-size: 1.2em;
+    color: #888;
+    margin: 0 0 8px;
+  }
+  a {
+    color: #000000;
+  }
+  .facet-name {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .facet-category-title {
+    font-size: 1.2em;
+    color: #888;
+    margin: 0 0 8px;
+  }
+  .facet-title {
+    font-size: 14px;
+    color: #000;
+  }
+  .ais-refinement-list-item {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .ais-body {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}

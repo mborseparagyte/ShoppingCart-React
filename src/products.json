@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "HP EliteBook x360 1020 G2",
+        "price": 450,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/rJH6dZ7PG",
+        "category": "Electronics"
+    },
+    {
+        "id": 2,
+        "name": "HP ZBook 15 G4 Mobile Workstation",
+        "price": 266,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/r1Vntb7PM",
+        "category": "Electronics"
+    },
+    {
+        "id": 3,
+        "name": "Redmi Note 4",
+        "price": 100,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/BJ7sFqbDz",
+        "category": "Electronics"
+    },
+    {
+        "id": 4,
+        "name": "ShoespieCasual ZipperLace-Up Sneaker",
+        "price": 33,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/BJNyWo-DM",
+        "category": "Shose"
+    },
+    {
+        "id": 5,
+        "name": "Michael Kors",
+        "price": 240,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/BJkOOD-wM",
+        "category": "Watch"
+    },
+    {
+        "id": 6,
+        "name": "Timebre Women Blue Casual Analog Watch14",
+        "price": 449,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/Sy--fobPz",
+        "category": "Watch"
+    },
+    {
+        "id": 7,
+        "name": "Kate Spade",
+        "price": 650,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/HydUvPWwM",
+        "category": "Bags"
+    },
+    {
+        "id": 8,
+        "name": "Suntop Neo 7 26 Ltrs",
+        "price": 200,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/r1PxrZXwf",
+        "category": "vegetables"
+    },
+    {
+        "id": 9,
+        "name": "Contrast Polka Dot Flare Dress",
+        "price": 200,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/HkEuynbvM",
+        "category": "Clothing"
+    },
+    {
+        "id": 10,
+        "name": "Armani",
+        "price": 100,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/SyAQb8EwG",
+        "category": "Clothing"
+    },
+    {
+        "id": 11,
+        "name": "HP ZBook 15 G4 Mobile Workstation",
+        "price": 266,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/r1Vntb7PM",
+        "category": "Electronics"
+    },
+    {
+        "id": 12,
+        "name": "Redmi Note 4",
+        "price": 100,
+        "image": "https://test.workpay.io/svc/api/Attachments/download/BJ7sFqbDz",
+        "category": "Electronics"
+    }
+]
