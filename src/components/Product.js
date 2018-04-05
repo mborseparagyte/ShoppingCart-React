@@ -69,7 +69,7 @@ class Product extends Component {
             alt={this.props.name}
             onClick={this.quickView.bind(
               this,
-              image,
+              image, 
               name,
               price,
               id,
@@ -79,6 +79,7 @@ class Product extends Component {
         </div>
         <h4 className="product-name">{this.props.name}</h4>
         <p className="product-price">{this.props.price}</p>
+        
         <Counter
           productQuantity={quantity}
           updateQuantity={this.props.updateQuantity}

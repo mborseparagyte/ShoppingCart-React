@@ -767,7 +767,6 @@ header .container {
 	color: #666;
 	max-width: 120px;
 	margin: 0 auto;
-	display: none;
 }
 .stepper-input .increment,
 .stepper-input .decrement {
