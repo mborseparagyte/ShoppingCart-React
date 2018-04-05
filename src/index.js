@@ -119,6 +119,10 @@ class App extends Component {
   handleMobileSearch() {
     this.setState({ term: "" });
   }
+  categoryClicked(category) {
+    console.log(category);
+    this.setState({ category });
+  }
   // Filter by Category
   handleCategory(event) {
     this.setState({ category: event.target.value });
@@ -231,10 +235,14 @@ class App extends Component {
           updateQuantity={this.updateQuantity}
           productQuantity={this.state.moq}
         />
-        <Aside categories={this.state.categories} />
+        <Aside
+          categories={this.state.categories}
+          categoryClicked={this.categoryClicked.bind(this)}
+        />
         <Products
           productsList={this.state.products}
           searchTerm={this.state.term}
+          searchCategory={this.state.category}
           addToCart={this.handleAddToCart}
           productQuantity={this.state.quantity}
           updateQuantity={this.updateQuantity}
