@@ -9,8 +9,9 @@ class Aside extends Component {
             <div
               onClick={
                 this.props.categoryClicked &&
-                this.props.categoryClicked.bind(this, category.id)
+                this.props.categoryClicked.bind(this, category.Name)
               }
+              style={{ cursor: "pointer" }}
             >
               <a className="facet-item ">
                 <span className="facet-name">
@@ -34,7 +35,13 @@ class Aside extends Component {
                 <div className="ais-body ais-hierarchical-menu--body">
                   <div className="ais-hierarchical-menu--list ais-hierarchical-menu--list__lvl0">
                     <div className="ais-hierarchical-menu--item">
-                      <div>
+                      <div
+                        onClick={
+                          this.props.categoryClicked &&
+                          this.props.categoryClicked.bind(this, "")
+                        }
+                        style={{ cursor: "pointer" }}
+                      >
                         <a href="javascript:void(0);" className="facet-item ">
                           <span className="facet-name">
                             <i className="fa fa-angle-right" /> All
