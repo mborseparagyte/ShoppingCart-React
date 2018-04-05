@@ -107,6 +107,7 @@ class App extends Component {
   }
   componentDidMount() {
     this.getProducts();
+    this.getCategories();
   }
 
   // Search by Keyword
