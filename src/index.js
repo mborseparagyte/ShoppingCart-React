@@ -88,8 +88,9 @@ class App extends Component {
       url: url,
       headers: headers
     }).then(response => {
+      console.log(response);
       this.setState({
-        categories: response.data.result
+        categories: response.data
       });
     });
 
