@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Aside from "./components/Aside";
 import QuickView from "./components/QuickView";
 import "./styles.css";
+import flexboxgrid from "flexboxgrid";
 
 const headers = {
   accept: "application/json",
@@ -242,6 +243,9 @@ class App extends Component {
         />
         <Footer />
         <QuickView
+          productQuantity={this.state.quantity}
+          addToCart={this.handleAddToCart}
+          updateQuantity={this.updateQuantity}
           product={this.state.quickViewProduct}
           openModal={this.state.modalActive}
           closeModal={this.closeModal}
